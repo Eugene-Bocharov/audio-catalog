@@ -1,0 +1,223 @@
+/* --------------------------------------------------Releases-------------------------------------------------- */
+
+.Releases{
+    /* background: #FFFFFF; */
+  /* Light */
+  
+  /* border: 1px solid #E6EFFB; */
+  /* box-sizing: border-box; */
+  /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05); */
+    /* max-width: 768px; */
+    /* margin-left: 25px; */
+    /* Light */
+  
+  }
+  
+  #Titile-Realeases-divider{
+    margin-left: 24px;
+    display: flex;
+  }
+  
+  .section__title_section__title_playlists{
+    margin-left: 15px;
+    
+  }
+  
+  .NewReleasesIco{
+    /* margin-top: 5px; */
+    margin-left: 10px;
+  }
+  
+  .release{
+    background: #FFFFFF;
+    /* Light */
+  
+    border: 1px solid #E6EFFB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    list-style: none;
+    width: 163px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s linear;
+   
+  }
+  
+  .release:hover{
+    box-shadow: 0 3px 3px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22); 
+  }
+  
+  .RelaseImg{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  
+  .ReleaseNameSong{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+  
+    letter-spacing: -0.02em;
+  
+     /* Text */
+  
+    color: #2D2D2D;
+    margin-left: 10px;
+  }
+  
+  .ReleaseArtistName{
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  
+    /* Dark */
+  
+    color: #7C8DB5;
+    transition: all 0.2s linear;
+  
+  }
+  
+  .ReleaseArtistName:hover{
+   color: darkblue;
+  }
+  
+  
+  #featuredPlaylists{
+    list-style: none;
+    margin: 0 40px;
+    padding: 0;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-grap: 28px; */
+    row-gap: 30px;
+  }
+  
+  
+  
+  /* --------------------------------------------------End Releases---------------------------------------------- */
+  /* --------------------------------------------------Playlists------------------------------------------------- */
+  .PlaylistsLoaded{
+    margin-top: 22px;
+    /* background: #FFFFFF;
+  /* Light */
+  /*  
+  border: 1px solid #E6EFFB;
+  box-sizing: border-box;
+  border-radius: 10px;
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05); */
+    max-width: 768px;
+    margin-left: 25px;
+    /* Light */
+  }
+  
+  #PlaylistsLoaded-divider{
+    margin-left: 24px;
+    display: flex;
+  }
+  
+  .playlistsLoadedIco{
+    margin-left: 10px;
+  }
+  
+  .playlistsLoaded_section__title_playlists{
+    margin-left: 15px;
+  }
+  
+  .playlistsLoadedElem{
+    max-width: 758px;
+    border: 1px solid #E6EFFB;
+    list-style: none; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 0.2s linear
+  }
+  
+  .playlistsLoadedElem:hover{
+  
+    box-shadow: 0 3px 3px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22); 
+  }
+  
+  .playlistsLoadedElemImg{
+    border-radius: 5px;
+  }
+  
+  .playlistsLoadedElemDivider{
+    /* max-height: 40px; */
+    /* margin-bottom: 60px;
+    max-height: 20px; */
+    margin-left: 10px;
+    /* margin-left: 400px; */
+  }
+  
+  .playlistsLoadedElemDividerName{
+    margin: 0 0 12px 0;
+    font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  
+  /* Text */
+  
+  color: #2D2D2D;
+  
+  }
+  
+  .playlistsLoadedElemDividerDescript:hover{
+    color: darkblue;
+  
+  }
+  
+  .playlistsLoadedElemDividerDescript{
+    margin: 0 0;
+    font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  letter-spacing: -0.04em;
+  transition: all 0.2s linear;
+  
+  /* Dark */
+  
+  color: #7C8DB5;
+  
+  }
+  
+  .playlistsLoadedElemTotal{
+    font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  text-align: right;
+  letter-spacing: -0.04em;
+  
+  color: #2D2D2D;
+  margin-left: auto;
+  margin-right: 15px;
+  }
+  
+  
+  /* --------------------------------------------------End Playlists--------------------------------------------- */

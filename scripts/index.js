@@ -1,3 +1,5 @@
+// 'use strict';
+
 // Load data
 
 fetch("./data/new-releases.json")
@@ -14,32 +16,43 @@ fetch("./data/playlists.json")
 
 // Your code
 
-function header(data) {
-  //  const Header = document.querySelector('#header');
-  //  const HeaderElemNav = document.createElement('nav');
-  //  HeaderElemNav.className = 'navigation';
-  //  const HeaderElemUl = document.createElement();
+ function header(data) {    
+//   //  const Header = document.querySelector('#header');
+//   //  const HeaderElemNav = document.createElement('nav');
+//   //  HeaderElemNav.className = 'navigation';
+//  const HeaderElemUl = document.createElement();
 
-  const logoBox = document.querySelector("#logo-box");
-  const logoBoxName = document.createElement("h5");
-  const UserName = "Eugene"; // Потім потрібно буде додати document.getElementById('#id').value;
-  logoBoxName.textContent = UserName;
-  logoBoxName.className = "UserName";
-  // const logoBoxImg = createElement('img');
-  // logoBoxImg.src = imageUrl;
-  logoBox.appendChild(logoBoxName);
-  // logoBox.appendChild(logoBoxImg);
-  const imageUrl = data.albums.items[0].images[2].url;
+// const imageUrl = data.albums.items[0].images[2].url;
 
-  const logoBoxImg = document.createElement("img");
-  logoBoxImg.src = imageUrl;
-  logoBoxImg.className = "UserImg";
-  logoBoxImg.width = 36;
-  logoBoxImg.height = 36;
-  logoBox.appendChild(logoBoxImg);
+const logoBox = document.querySelector("#logo-box");
+const logoBoxName = document.createElement("h5");
+const UserName = "Eugene"; // Потім потрібно буде додати document.getElementById('#id').value;
+logoBoxName.textContent = UserName;
+logoBoxName.className = "UserName";
+const logoBoxImg = createElement('img');
+logoBoxImg.src = imageUrl;
+logoBox.appendChild(logoBoxName);
+
+
+// const logoBoxImg = document.createElement("img");
+// logoBoxImg.src = imageUrl;
+logoBoxImg.className = "UserImg";
+logoBoxImg.width = 36;
+logoBoxImg.height = 36;
+// logoBox.appendChild(logoBoxImg);
 }
 
 function newReleasesLoaded(data) {
+  const NewReleases = document.querySelector('#Titile-Realeases-divider');
+  const NewRelasesTitleIco = document.createElement('img');
+NewRelasesTitleIco.src = './images/icons/thunder.svg';
+NewRelasesTitleIco.className = 'NewReleasesIco';
+ NewReleases.appendChild(NewRelasesTitleIco);
+const NewRelasesTitleName = document.createElement('h2');
+  NewRelasesTitleName.className = 'section__title_section__title_playlists';
+NewRelasesTitleName.textContent = 'New Releases';
+NewReleases.appendChild(NewRelasesTitleName);
+
     const releasesElem = document.querySelector('#featuredPlaylists');
   const arr = [];
     for(const vall of data.albums.items){
@@ -64,34 +77,27 @@ function newReleasesLoaded(data) {
      releasesItemElem.appendChild(releasesItemArtistElem);
      arr.push(releasesItemElem)
     }
-        const NewReleases = document.querySelector('#Titile-Realeases-divider');
-           const NewRelasesTitleIco = document.createElement('img');
-         NewRelasesTitleIco.src = './images/icons/thunder.svg';
-        NewRelasesTitleIco.className = 'NewReleasesIco';
-         NewReleases.appendChild(NewRelasesTitleIco);
-        const NewRelasesTitleName = document.createElement('h2');
-           NewRelasesTitleName.className = 'section__title_section__title_playlists';
-        NewRelasesTitleName.textContent = 'New Releases';
-         NewReleases.appendChild(NewRelasesTitleName);
-  const imageUrl = data.albums.items[vall].images[1].url;
+       
+        //  NewReleases.appendChild(NewRelasesTitleName);
+  // const imageUrl = data.albums.items[vall].images[1].url;
    const releasesItemElem1 = document.createElement('li').cloneNode(true);
    releasesItemElem1.className = 'release';
-   releasesElem1.appendChild(releasesItemElem);
+  //  releasesElem1.appendChild(releasesItemElem);
        const releasesItemImageElem1 = document.createElement('img');
-    releasesItemImageElem1.src = imageUrl;
+    // releasesItemImageElem1.src = imageUrl;
   releasesItemImageElem1.className = 'RelaseImg';
      releasesItemImageElem1.width = 150 ;
-   releasesItemElem1.appendChild(releasesItemImageElem);
+  //  releasesItemElem1.appendChild(releasesItemImageElem);
    const releasesItemNameElem1 = document.createElement('h6');
    releasesItemNameElem1.className = 'ReleaseNameSong';
    // const releasesItemNameElemText =  data.albums.items[0].[1].url;;
    releasesItemNameElem1.textContent =  'SongName';
-   releasesItemElem1.appendChild(releasesItemNameElem);
+  //  releasesItemElem1.appendChild(releasesItemNameElem);
    const releasesItemArtistElem1 = document.createElement('a');
    releasesItemArtistElem1.href = '#';
    releasesItemArtistElem1.text = 'Artist';
    releasesItemArtistElem1.className = 'ReleaseArtistName';
-   releasesItemElem.appendChild(releasesItemArtistElem1);
+  //  releasesItemElem.appendChild(releasesItemArtistElem1);
   // const releasesItemElem1 = releasesItemElem.cloneNode(true);
   // const releasesItemElem2 = releasesItemElem.cloneNode(true);
   // const releasesItemElem3 = releasesItemElem.cloneNode(true);
@@ -102,18 +108,6 @@ function newReleasesLoaded(data) {
 }
 
 function playlistsLoaded(data) {
-for(vallf of data.playlists.items){
-  //   const NewReleases1 = document.querySelector('#Titile-Realeases-divider-1');
-  //   const NewRelasesTitleIco = document.createElement('img');
-  // // NewRelasesTitleIco.src = './images/icons/thunder.svg';
-  // // NewRelasesTitleIco.className = 'NewReleasesIco';
-  // NewReleases.appendChild(NewRelasesTitleIco);
-  // const NewRelasesTitleName = document.createElement('h2');
-  //   NewRelasesTitleName.className = 'section__title_section__title_playlists';
-  // NewRelasesTitleName.textContent = 'New Releases';
-  // NewReleases1.appendChild(NewRelasesTitleName);
-
-  // const arrf = [];
 
   const playlistsLoadedTitle = document.querySelector(
     "#PlaylistsLoaded-divider"
@@ -125,17 +119,25 @@ for(vallf of data.playlists.items){
   playlistsLoadedTitleName.className =
     "playlistsLoaded_section__title_playlists";
   playlistsLoadedTitleName.textContent = "New Releases";
-  //  const imageUrl = data.albums.items[0].images[1].url;
+  
 
 
   playlistsLoadedTitle.appendChild(playlistsLoadedTitleIco);
   playlistsLoadedTitle.appendChild(playlistsLoadedTitleName);
 
+for(vallf of data.playlists.items){
+
+
+  const arrf = [];
+
+ 
   const playlistsLoaded = document.querySelector("#LoadedPlaylists");
   const playlistsLoadedElem = document.createElement("li");
   playlistsLoadedElem.className = "playlistsLoadedElem";
   playlistsLoaded.appendChild(playlistsLoadedElem);
 
+
+  
   const playlistsLoadedElemImg = document.createElement("img");
  
   const imageUrl = vallf.images[0].url;
@@ -151,21 +153,30 @@ for(vallf of data.playlists.items){
   playlistsLoadedElemDivider.className = "playlistsLoadedElemDivider";
   playlistsLoadedElem.appendChild(playlistsLoadedElemDivider);
 
-  playlistsLoadedElemDividerDescripttext = vallf.description[0].url;
+  const playlistsLoadedElemDividerDescriptname = vallf.name;
 
   const playlistsLoadedElemDividerName = document.createElement("h5");
   playlistsLoadedElemDividerName.className = "playlistsLoadedElemDividerName";
-  playlistsLoadedElemDividerName.textContent = playlistsLoadedElemDividerDescripttext;
+  playlistsLoadedElemDividerName.textContent = playlistsLoadedElemDividerDescriptname;
   playlistsLoadedElemDivider.appendChild(playlistsLoadedElemDividerName);
+
+  const playlistsLoadedElemDividerDescripttext = vallf.description;
 
   const playlistsLoadedElemDividerDescript = document.createElement('p');
   playlistsLoadedElemDividerDescript.className = 'playlistsLoadedElemDividerDescript';
   playlistsLoadedElemDividerDescript.textContent = playlistsLoadedElemDividerDescripttext;
   playlistsLoadedElemDivider.appendChild(playlistsLoadedElemDividerDescript);
 
-
+  const playlistsLoadedElemtot = document.createElement('p');
+  playlistsLoadedElemtot.textContent = vallf.tracks.total + '  tracks';
+  playlistsLoadedElemtot.className = 'playlistsLoadedElemTotal';
+   
+    
+  
+  playlistsLoadedElem.appendChild(playlistsLoadedElemtot);
+  
+  
   playlistsLoaded.append(...arrf);
  
-}
-
+  }
 }
