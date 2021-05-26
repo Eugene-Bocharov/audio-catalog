@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/search.css">
     <script
       defer
       src="/examples/libs/chief-slider/chief-slider.min.js"
@@ -42,11 +43,41 @@
         </nav>
       </header>
 
-      <section>
-         <p>
-            Search
-         </p>
-      </section>
+      
+        <div class="Search_container">
+          <form action="#" class="search-form">
+            <div class="searchbar">
+              <input type="text" id="searchbar" name="query" placeholder="Search" class="searchbar__input">
+              <button class="searchbar__btn" type="submit" id="searchBtn">
+                <img src="./images/icons/search.png" alt="">
+              </button>
+            </div>           
+          </form>
+          <div class="types-list">
+            <div class="type type_active">
+              <button class="type__btn">
+                <span class="type__text"></span>
+                <div class="type__overlay">
+                  <img src="./images/icons/type-check.png" alt="" class="type__check-icon">
+                </div>
+              </button>
+            </div>
+            <div class="type">
+              <button class="type__btn">
+                <span class="type__text"></span>
+                <div class="type__overlay">
+                  <img src="./images/icons/type-check.png" alt="" class="type__check-icon">
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- <textarea maxlength="47" placeholder="Search" class="Search" name="Search" id="#search" cols="30" rows="1"></textarea>
+          <div class="searchIcon_container">
+            <img src="./images/icons/Ellipse 5search_Icon.svg" alt="" class="EllipseSearch_Icon">
+            <img src="./images/icons/Line 4search_Icon.svg" alt="" class="LineSearch_Icon">
+          </div> -->
+        </div>
 
     </div>
 

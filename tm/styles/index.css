@@ -45,6 +45,7 @@ html {
   display: flex;
   justify-content: space-between;
   max-width: 350px;
+  padding: 0;
 }
 
 
