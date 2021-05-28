@@ -1,40 +1,88 @@
- 
-.searchbar__input{
-   border: 1px solid #E6EFFB;
-   box-sizing: border-box;
-   border-radius: 10px;
-   width: 759px;
-   height: 48px;
-   max-height: 48px;
-   max-width: 759px;
-   padding: 15px 16px;
-}
 
-button{
-   background: none;
-   border: none;
-}
 
-.searchbar__btn:hover{
-   cursor: pointer;
-}
 
-.searchbar{
+
+.searchbar {
    position: relative;
-}
-
-.searchbar__btn{
+ }
+ 
+ .searchbar__input {
+   border: 1px solid #E6EFFB;
+   border-radius: 10px;
+ 
+   padding: 16px 14px;
+   width: 100%;
+ 
+   font-size: 16px;
+ }
+ 
+ .searchbar__input::placeholder {
+   color: #DADADA;
+ }
+ 
+ .searchbar__btn {
    position: absolute;
    right: 14px;
-   top: 13px;
-}
-
-.types-list{
-   display: flex;
-}
-
-.type{
-   background: #FFFFFF;
-   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.05);
+   top: 0;
+   bottom: 0;
+ 
+   background: none;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .types-list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 132px);
+   column-gap: 12px;
+   row-gap: 18px;
+   margin-top: 18px;
+ }
+ 
+ .type {
+   position: relative;
+   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.05);
    border-radius: 10px;
-}
+   overflow: hidden;
+ }
+ 
+ .type_active {
+   border-radius: 10px;
+ }
+ 
+ .type__btn {
+   display: block;
+   width: 100%;
+   height: 100%;
+   border: none;
+   background: #fff;
+   cursor: pointer;
+ }
+ 
+ .type__text {
+   font-weight: 700;
+   font-size: 24px;
+ }
+ 
+ .type__overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   display: none;
+   border-radius: 10px;
+   border: 5px solid #F8991C;
+ }
+ 
+ .type__check-icon {
+   position: absolute;
+   top: -1px;
+   right: -1px;
+ }
+ 
+ .type_active .type__overlay {
+   display: block;
+ }
+ 
