@@ -22,24 +22,22 @@ fetch("./data/playlists.json")
 //   //  HeaderElemNav.className = 'navigation';
 //  const HeaderElemUl = document.createElement();
 
-// const imageUrl = data.albums.items[0].images[2].url;
+
 
 const logoBox = document.querySelector("#logo-box");
 const logoBoxName = document.createElement("h5");
 const UserName = "Eugene"; // Потім потрібно буде додати document.getElementById('#id').value;
 logoBoxName.textContent = UserName;
 logoBoxName.className = "UserName";
-const logoBoxImg = createElement('img');
-logoBoxImg.src = imageUrl;
 logoBox.appendChild(logoBoxName);
 
 
-// const logoBoxImg = document.createElement("img");
-// logoBoxImg.src = imageUrl;
+const logoBoxImg = document.createElement("img");
+logoBoxImg.src = './images/dark.jpg';
 logoBoxImg.className = "UserImg";
 logoBoxImg.width = 36;
 logoBoxImg.height = 36;
-// logoBox.appendChild(logoBoxImg);
+logoBox.appendChild(logoBoxImg);
 }
 
 function newReleasesLoaded(data) {
@@ -70,12 +68,17 @@ NewReleases.appendChild(NewRelasesTitleName);
     //  const releasesItemNameElemText =  data.albums.items[0].[1].url;;
      releasesItemNameElem.textContent =  vall.name;
      releasesItemElem.appendChild(releasesItemNameElem);
+    //  const releasesItemElemButton = document.createElement('button');
+    //  releasesItemElemButton.className = 'releasesItemElemButton';
+    //  releasesItemElem.appendChild(releasesItemElemButton);
      const releasesItemArtistElem = document.createElement('a');
      releasesItemArtistElem.href = '#';
      releasesItemArtistElem.textContent = vall.artists[0].name;
      releasesItemArtistElem.className = 'ReleaseArtistName';
      releasesItemElem.appendChild(releasesItemArtistElem);
-     arr.push(releasesItemElem)
+     
+     arr.push(releasesItemElem);    
+    
     }
        
         //  NewReleases.appendChild(NewRelasesTitleName);
@@ -147,7 +150,7 @@ for(vallf of data.playlists.items){
   playlistsLoadedElemImg.width = 60;
   playlistsLoadedElemImg.height = 60;
 
-  playlistsLoadedElem.appendChild(playlistsLoadedElemImg);
+   playlistsLoadedElem.appendChild(playlistsLoadedElemImg);
 
   const playlistsLoadedElemDivider = document.createElement("div");
   playlistsLoadedElemDivider.className = "playlistsLoadedElemDivider";
@@ -155,7 +158,7 @@ for(vallf of data.playlists.items){
 
   const playlistsLoadedElemDividerDescriptname = vallf.name;
 
-  const playlistsLoadedElemDividerName = document.createElement("h5");
+  const playlistsLoadedElemDividerName = document.createElement("h5")
   playlistsLoadedElemDividerName.className = "playlistsLoadedElemDividerName";
   playlistsLoadedElemDividerName.textContent = playlistsLoadedElemDividerDescriptname;
   playlistsLoadedElemDivider.appendChild(playlistsLoadedElemDividerName);
@@ -180,3 +183,4 @@ for(vallf of data.playlists.items){
  
   }
 }
+
