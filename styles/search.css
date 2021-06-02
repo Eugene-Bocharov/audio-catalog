@@ -9,12 +9,14 @@
  .searchbar__input {
    border: 1px solid #E6EFFB;
    border-radius: 10px;
+   position: relative;
  
    padding: 16px 14px;
    width: 100%;
  
    font-size: 16px;
  }
+
  
  .searchbar__input::placeholder {
    color: #DADADA;
@@ -24,8 +26,9 @@
    position: absolute;
    right: 14px;
    top: 0;
+   
    bottom: 0;
- 
+   /* z-index: 6; */
    background: none;
    border: none;
    cursor: pointer;
@@ -107,9 +110,9 @@
     margin: 0 auto;
   }
 
-  .searchbar{
+  /* .searchbar{
     padding-left: 40px;
     padding-right: 40px;
-  }
+  } */
 
  }

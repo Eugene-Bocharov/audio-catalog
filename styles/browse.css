@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     transition: all 0.2s linear;
-    position: static;
+    position: relative;
    
   }
   
@@ -38,7 +38,35 @@
     box-shadow: 0 3px 3px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22); 
     /* background:  #e2dddd */
   }
-  
+
+  .release:hover .releasesItemButtonElem{
+    display: block;
+    /* box-shadow: 0 3px 3px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);  */
+    /* background:  #e2dddd */
+  }
+  @keyframes releasesItemButtonElemImg-animation {
+    0%, 20%, 60%, 100% {
+      transform: translateY(-10%);
+      /* transform: translateY(0); */
+    }
+  }
+
+  .releasesItemButtonElemImg{
+    animation-name: releasesItemButtonElemImg-animation;
+  }
+  .release:hover .releasesItemButtonElem .releasesItemButtonElemImg{
+    /* margin-bottom: 10px; */
+    /* @keyframes releasesItemButtonElemImg-animation {
+      0%, 20%, 60%, 100% {
+        transform: translateY(-10%);
+        /* transform: translateY(0); */
+      /* }  */
+
+    /* } */
+animation: releasesItemButtonElemImg-animation 5s;
+  }
+
+  /* releasesItemButtonElem */
   .RelaseImg{
     border: 1px solid #fff;
     border-radius: 25px;
@@ -73,6 +101,7 @@
     margin-left: 10px;
     margin-bottom: 10px;
   
+    
     /* Dark */
   
     color: #7C8DB5;
@@ -83,7 +112,6 @@
   .ReleaseArtistName:hover{
    color: darkblue;
   }
-  
 
   .releasesItemElemButton{
     position: absolute;
@@ -108,7 +136,19 @@
     row-gap: 30px;
   }
   
-  
+  .releasesItemButtonElem{
+    display: none;
+    /* background-image: url(../images/icons/play-button.png); */
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 49%;
+    left: 63%;
+    z-index: 5;
+    border: 0px solid red;
+    border-radius: 50px;
+    background-color: white;
+  }
   
   /* --------------------------------------------------End Releases---------------------------------------------- */
   /* --------------------------------------------------Playlists------------------------------------------------- */
@@ -344,7 +384,10 @@ padding-right: 10px;
 @media (max-width: 830px) {
 
 
- 
+ /* .searchbar__btn {
+  position: absolute;
+  right: 13%;
+} */
  /* .navigation{
    display: flex;
    justify-content: space-around;

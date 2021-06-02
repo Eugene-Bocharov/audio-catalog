@@ -72,10 +72,23 @@ NewReleases.appendChild(NewRelasesTitleName);
     //  releasesItemElemButton.className = 'releasesItemElemButton';
     //  releasesItemElem.appendChild(releasesItemElemButton);
      const releasesItemArtistElem = document.createElement('a');
-     releasesItemArtistElem.href = '#';
+     releasesItemArtistElem.href = vall.external_urls.spotify;
+     releasesItemArtistElem.target='__blank';
      releasesItemArtistElem.textContent = vall.artists[0].name;
      releasesItemArtistElem.className = 'ReleaseArtistName';
      releasesItemElem.appendChild(releasesItemArtistElem);
+     const releasesItemButtonElem = document.createElement('a');
+     releasesItemButtonElem.href = vall.external_urls.spotify; 
+     releasesItemButtonElem.className = 'releasesItemButtonElem';
+     releasesItemElem.appendChild(releasesItemButtonElem)
+     releasesItemButtonElemImg = document.createElement('img');
+     releasesItemButtonElemImg.className = 'releasesItemButtonElemImg';
+     releasesItemButtonElemImg.src = './images/icons/play-button.png';
+     releasesItemButtonElemImg.height = 50;
+     releasesItemButtonElemImg.width = 50;
+     releasesItemButtonElem.appendChild(releasesItemButtonElemImg);
+
+
      
      arr.push(releasesItemElem);    
     
@@ -97,7 +110,7 @@ NewReleases.appendChild(NewRelasesTitleName);
    releasesItemNameElem1.textContent =  'SongName';
   //  releasesItemElem1.appendChild(releasesItemNameElem);
    const releasesItemArtistElem1 = document.createElement('a');
-   releasesItemArtistElem1.href = '#';
+   releasesItemArtistElem1.href = releas_item.external_urls.spotify;
    releasesItemArtistElem1.text = 'Artist';
    releasesItemArtistElem1.className = 'ReleaseArtistName';
   //  releasesItemElem.appendChild(releasesItemArtistElem1);
@@ -119,7 +132,7 @@ function playlistsLoaded(data) {
   playlistsLoadedTitleIco.src = "./images/icons/heart.svg";
   playlistsLoadedTitleIco.className = "playlistsLoadedIco";
   const playlistsLoadedTitleName = document.createElement("h2");
-  playlistsLoadedTitleName.className =
+  // playlistsLoadedTitleName.className =
     "playlistsLoaded_section__title_playlists";
   playlistsLoadedTitleName.textContent = "New Releases";
   
