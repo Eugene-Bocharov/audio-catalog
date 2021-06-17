@@ -16,6 +16,8 @@ html {
   --color-accent: #f8991c;
   --color-border: #e6effb;
   --color-disabled: #dadada;
+  --background-color: #ffffff;
+  --text-color: #000000;
 
   font-family: sans-serif;
   color: var(--color-dark);
@@ -25,13 +27,19 @@ html {
   max-width: 768px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-right: 10px;
 }
 
+@media(max-width:830px){
+  
+.container {
+  /* padding-left: 30px; */
+  padding-right: 30px;
+}  
+}
 
-
-/* --------------------------------------------------Header---------------------------------------------------- */
+/* ------------------------------------------------ Header---------------------------------------------------- */
 
 /* .header{
   background-color: #efefef;
@@ -39,3 +47,29 @@ html {
 
 
 /* --------------------------------------------------End Header------------------------------------------------ */
+
+.main-content {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  color: var(--text-color);
+}
+
+:root {
+  --dark-background-color: #111111;
+  --dark-text-color: #eeeeee;
+}
+
+body.theme-dark {
+  --background-color: var(--dark-background-color);
+  --text-color: var(dark-text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body.theme-auto {
+      --background-color: var(--dark-background-color);
+      --text-color: var(--dark-text-color);
+  }
+}

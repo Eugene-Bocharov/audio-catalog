@@ -11,8 +11,7 @@
 <body>
     <div class="container">
          <a href="./profile.html" style="margin-top: 35px;">
-         <img src="./images/icons/arrow_left_normal.svg" style="margin-top: 15px
-         ; margin-left: 30px;" >
+         <img src="./images/icons/arrow_left_normal.svg" style="margin-top: 15px; margin-left: 30px;" >
         </a>
 
         <section>
@@ -26,13 +25,11 @@
                       <li><a href="">Ukr</a></li>
                     </ul>
                   </li>
-                  <li><a href="" class="down">Theme</a>
-                    <ul class="submenu">
-                      <li><a class="subm-i-1" href="">light</a></li>
-                      <li><a href="">dark</a></li>
-                      <li><a href="">dark-blue</a></li>
-                    </ul>
-                  </li>
+                  <select id="theme">
+                    <option value="auto">Auto</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
                   <!-- <li><a href="./security.html">Security</a></li> -->
                   <li><a href="./contact.html">Contact</a></li>
                 </ul>
@@ -40,5 +37,11 @@
           </div>
         </section>
     </div>
+
+    <script src="./scripts/lang&theme.js" ></script>
+
+    <button class="them_button">
+  <!-- <p id="theme_button_text"></p> -->
+    </button>
 </body>
 </html>
