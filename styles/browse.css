@@ -48,17 +48,17 @@
     transform: rotate(270deg);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
     /* right: 1px; */
-/*  */
+    /*  */
   }
 
-20%{
-  left: 90px;
-}
+  20% {
+    left: 90px;
+  }
 
   80% {
     left: 110px;
     /* transform: rotate(360deg); */
-  } 
+  }
 
   100% {
     top: 49%;
@@ -154,7 +154,7 @@
   border-radius: 25px;
   margin: 0;
   padding: 0;
-  column-gap: 21px;
+  column-gap: 30px;
   row-gap: 18px;
 }
 

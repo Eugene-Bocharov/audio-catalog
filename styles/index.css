@@ -1,6 +1,6 @@
 /* --------------------------------------------------Fonts---------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
 
 /* --------------------------------------------------End Fonts------------------------------------------------ */
 
@@ -27,16 +27,15 @@ html {
   max-width: 768px;
   width: 100%;
   margin: 0 auto;
-  /* padding-left: 10px; */
+  padding-left: 10px;
   padding-right: 10px;
 }
 
-@media(max-width:830px){
-  
-.container {
-  /* padding-left: 30px; */
-  padding-right: 30px;
-}  
+@media (max-width: 768px) {
+  .container {
+    /* padding-left: 30px; */
+    padding-right: 30px;
+  }
 }
 
 /* ------------------------------------------------ Header---------------------------------------------------- */
@@ -44,7 +43,6 @@ html {
 /* .header{
   background-color: #efefef;
 } */
-
 
 /* --------------------------------------------------End Header------------------------------------------------ */
 
@@ -69,7 +67,7 @@ body.theme-dark {
 
 @media (prefers-color-scheme: dark) {
   body.theme-auto {
-      --background-color: var(--dark-background-color);
-      --text-color: var(--dark-text-color);
+    --background-color: var(--dark-background-color);
+    --text-color: var(--dark-text-color);
   }
 }
