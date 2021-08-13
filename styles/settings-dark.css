@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+body {
+  margin: 0;
+  /* background-image: url(https://html5book.ru/wp-content/uploads/2017/03/dulcineia-dias-195000.jpg); */
+  /* background-position: center center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* height: 100vh; */
+  background-color:  #373737;
+  position: relative;
+}
+/* body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
+} */
+/* nav {
+  text-align: center;
+  padding: 40px 0 0;
+  /* display: flex; */
+/* flex-direction: column; */
+/* } */
+*/ nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.topmenu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: auto; */
+  padding-left: auto;
+  align-items: center;
+}
+
+.topmenu
+.topmenu > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+  list-style-type: none;
+
+}
+.topmenu > li > a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  /* margin-right: 6px; */
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+
+  margin-bottom: 15px;
+}
+/* .topmenu > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  transition: .3s;
+} */
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.set-item-name{
+  display: flex;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  /* margin-right: 6px; */
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+
+  margin-bottom: 15px;
+}
+
+.menu-of-set-items{
+  /* position: absolute; */
+/* margin:  40% 50% 50% 40%; */
+/* top: 80%;*/
+  
+}
+
+#set-item-button-ukr{
+  height: 35px;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: auto;
+  font-family: Lato;
+  font-style: normal;
+  background-color: #373737;
+  color: white;
+  border: white 2px solid;
+  border-radius: 25px;
+}
+
+#set-item-button-eng{
+  height: 35px;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: auto;
+  font-family: Lato;
+  font-style: normal;
+  background-color: #373737;
+  color: white;
+  border: white 2px solid;
+  border-radius: 25px;
+}
+
+#set-item-button-dark{
+  height: 35px;
+  margin-top: auto;
+  margin-left: 10px;
+  margin-bottom: auto;
+  font-family: Lato;
+  font-style: normal;
+  background-color: #373737;
+  color: white;
+  border: white 2px solid;
+  border-radius: 25px;
+}
+

@@ -18,7 +18,7 @@ background-color: #373737;
   
   .NewReleasesIco {
     /* margin-top: 5px; */
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   
   .release {
@@ -29,7 +29,7 @@ background-color: #373737;
     box-sizing: border-box;
     border-radius: 10px;
     list-style: none;
-    width: 163px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     transition: all 0.2s linear;
@@ -82,20 +82,21 @@ background-color: #373737;
   
   /* releasesItemButtonElem */
   /* @media only screen and (min-width: 320px) and (max-width: 384px) { */
-  .relases {
+  /* .relases {
     max-width: 370px;
     height: 100%;
+    widt: 100%;
     object-fit: cover;
     object-position: center;
-    object-position: center;
-  }
+    object-position: center; */
+  
   .RelaseImg {
     border: 1px solid #373737;
     border-radius: 25px;
     margin-left: 5px;
     margin-top: 10px;
-  
-    /* width: 100%; */
+  /* height: 100%; */
+    width: 94%;
   }
   
   .ReleaseNameSong {
@@ -126,7 +127,6 @@ background-color: #373737;
     margin-bottom: 10px;
   
     /* Dark */
-  
     color: #7c8db5;
     transition: all 0.2s linear;
   }
@@ -198,7 +198,7 @@ background-color: #373737;
   }
   
   .playlistsLoadedIco {
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   
   .playlistsLoaded_section__title_playlists {
@@ -291,7 +291,7 @@ background-color: #373737;
   /* --------------------------------------------------Media----------------------------------------------------- */
   @media (max-width: 708px) {
     #Titile-Realeases-divider {
-      margin-left: 25.64px;
+      /* margin-left: 25.64px; */
     }
     #featuredPlaylists.releases {
       grid-template-columns: repeat(3, 1fr);
@@ -345,7 +345,7 @@ background-color: #373737;
       z-index: 3;
       top: 7%;
       right: 13%;
-      background-color: #fff;
+      background-color: #373737 ;
       /* height: 250px; */
       /* width: 150px; */
       border-radius: 15px;
@@ -370,3 +370,8 @@ background-color: #373737;
       transition: all 0.5s linear;
     }
   }
+
+
+
+
+  

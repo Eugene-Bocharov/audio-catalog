@@ -7,11 +7,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/search.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/browse.css">
-    <link rel="stylesheet" href="./styles/settings.css">
-    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/serch-dark.css">
+    <link rel="stylesheet" href="./styles/navbar-dark.css">
+    <!-- <link rel="stylesheet" href="./styles/browse.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/settings.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/profile.css"> -->
     <script
       defer
       src="/examples/libs/chief-slider/chief-slider.min.js"
@@ -22,6 +22,8 @@
           loop: true,
         });
       });
+
+      // console.clear();
     </script>
   </head>
   <body>
@@ -30,7 +32,7 @@
       <nav class="navigation">
 
         <button type="button" class="nav__toggler" id="navToggler" style="margin-bottom: 10px;">
-          <img src="images/icons/nav_menu.svg" alt="Open nav menu" class="button-menu-img" />
+          <img src="images/icons/nav_menu_white.png" alt="Open nav menu" class="button-menu-img" />
         </button>
 
         <ul class="menu">
@@ -40,8 +42,12 @@
           <li class="menu-item">
             <a href="./Search.html" class="menu-item_link-1">Search</a>
           </li>
+          <!-- <li class="menu-item">
+            <a href="#" class="menu-item_link">Library</a>
+          </li> -->
+
           <li class="menu-item">
-            <!-- <a href="#" class="menu-item_link">Library</a> -->
+            <a href="./playlists.html" class="menu-item_link">Playlists</a>
           </li>
           <li class="menu-item">
             <a href="./profile.html" class="menu-item_link">Profile</a>
@@ -58,7 +64,7 @@
             <div class="searchbar">
               <input type="text" id="searchbar" name="serach" placeholder="Search" class="searchbar__input" >
               <button class="searchbar__btn" type="submit" id="searchBtn">
-                <img src="./images/icons/magnifying-glass.png" height="23px" width="23px" alt="">
+                <img src="./images/icons/magnifying-glass_white.png" height="23px" width="23px" alt="">
               </button>
             </div>           
           </form>
@@ -67,7 +73,7 @@
               <button class="type__btn">
                 <span class="type__text">Album</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>
@@ -75,7 +81,7 @@
               <button class="type__btn">
                 <span class="type__text">Artist</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>
@@ -83,7 +89,7 @@
               <button class="type__btn">
                 <span class="type__text">Playlist</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>
@@ -91,7 +97,7 @@
               <button class="type__btn">
                 <span class="type__text">Track</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>
@@ -99,7 +105,7 @@
               <button class="type__btn">
                 <span class="type__text">Show</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>
@@ -107,7 +113,7 @@
               <button class="type__btn">
                 <span class="type__text">Episode</span>
                 <div class="type__overlay">
-                  <img src="./images/icons/type-check.svg" alt="" class="type__check-icon">
+                  <img src="./images/icons/type-check_white.png" alt="" class="type__check-icon">
                 </div>
               </button>
             </div>

@@ -1,0 +1,402 @@
+/* --------------------------------------------------------------------------------------------   blocks   --------------------------------------------------------------------------------------------  */
+
+.block-section {
+  margin-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  width: 800px;
+  /* background-colr: rgb(100, 63, 63); */
+  position: relative;
+}
+
+.add-block {
+  width: 230px;
+  height: 230px;
+  background-color: rgb(250, 250, 250, 0.1);
+  border-radius: 10px;
+  position: relative;
+  padding-top: 80px;
+  padding-left: 80px;
+  position: relative;
+}
+
+.add-button {
+  height: 60px;
+  width: 60px;
+  /* top: 30%; */
+  background-color: rgb(250, 250, 250, 0.1);
+  border-radius: 10px;
+  padding: 9px;
+}
+
+.white-plus {
+  height: 40px;
+}
+
+.creating-part {
+  display: none;
+  width: 230px;
+  height: 230px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10px;
+  position: relative;
+}
+
+.creating-part_active {
+  animation-name: adding;
+  animation-duration: 1s;
+
+  width: 230px;
+  height: 230px;
+  background-color: rgb(156, 156, 156);
+  border-radius: 10px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.back-button {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(000, 000, 000, 0.6);
+  border: 0;
+  border-radius: 10px;
+}
+
+.playlist-name-block {
+  height: 40px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+  font-family: Lato;
+  font-style: normal;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.create-block-button {
+  height: 35px;
+  width: 130px;
+  border-radius: 10px;
+  border: 0ch;
+  margin-top: 80px;
+  margin-left: 90px;
+}
+
+.playlist-block {
+  animation-name: adding;
+  animation-duration: 1s;
+  width: 230px;
+  height: 230px;
+  background-color: rgb(156, 156, 156);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-image: url("../images/dark.jpg");
+  background-size: 130%;
+ transition: background-size 0.3s ease;
+}
+
+.playlist-block:hover {
+  /* box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22); */
+  /* background-size: 340px; */
+  /* background-position-x: 12px; */
+  /* -webkit-transform: scale(1);
+    transform: scale(1); */
+    background-size: 140%;
+}
+
+.playlist-block-title {
+    position: relative;
+  font-family: Lato;
+  font-style: normal;
+  padding-left: 10px;
+  font-weight: 900;
+  padding-top: 0;
+  margin-top: 10px;
+  font-size: 24px;
+  color: white;
+  /* background-color: rgb(134, 133, 133); */
+  width: 210px;
+}
+/* --------------------------------------------------------------------------------------------   end blocks   ---------------------------------------------------------------------------------------------  */
+
+/* -----------------------------------------------------------------------------------------   playlist-content   ----------------------------------------------------------------------------------------  */
+
+.playlist-content {
+  /* height: 700px;
+    width: 100%;
+    max-width: 730px;
+    background-color: #373737;
+    position: absolute;
+    border: 2.5px solid #5e5e5e;
+    border-radius: 10px; */
+  display: none;
+  height: 700px;
+  width: 100%;
+  max-width: 1030px;
+  background-color: #373737;
+  position: absolute;
+  border: 2.5px solid #5e5e5e;
+  border-radius: 10px;
+  left: 15%;
+}
+
+.playlist-content_active {
+  /* height: 700px;
+      width: 100%;
+      max-width: 730px;
+      background-color: #373737;
+      position: absolute;
+      border: 2.5px solid #5e5e5e;
+      border-radius: 10px; */
+  /* display: none; */
+  animation-name: adding;
+  animation-duration: 0.5s;
+  height: 700px;
+  width: 100%;
+  max-width: 1030px;
+  background-color: #373737;
+  position: absolute;
+  border: 2.5px solid #5e5e5e;
+  border-radius: 10px;
+  left: -5%;
+
+}
+
+.playlist-content-back-button {
+  animation-name: adding;
+  animation-duration: 1s;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(156, 156, 156);
+  border: 0;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.playlist_content_playlist_title {
+  font-family: Lato;
+  font-style: normal;
+  padding-left: 180px;
+  font-weight: 900;
+  padding-top: 0;
+  margin-top: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.playlist_content_playlist_img{
+   height: 150px;
+   width: 150px;
+   border-radius: 10px;
+   position: absolute;
+   background-size: cover;
+   top: 54px;
+   left: 2%;
+}
+
+.playlist-content-markup{
+    display: flex;
+    margin-top: 200px;
+    background-color: #373737;
+    position: absolute;
+/* border-bottom:  2.5px solid #5e5e5e; */
+}
+
+.playlist-content-markup:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #d2d7da;
+    width: 100%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    left: 52%;
+  }
+
+.playlist-content-markup-text{
+    position: relative;
+    font-family: Lato;
+    font-style: normal;
+    color: white;
+    margin-left: 30px;
+}
+.playlist-content-markup-song-box{
+    position: absolute;
+    top: 290px;
+    margin-left: 20px;
+}
+
+.playlist-content-markup-song{
+    margin-top: 15px;
+    display: flex;
+    transition: all 0.2s linear; 
+    position: relative;
+    /* background-color: rgb(165, 165, 165); */
+}
+
+.playlist-content-markup-song:hover{
+    /* background-color: rgb(165, 165, 165); */
+}
+
+.playlist-content-markup-song-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 20px;
+    /* margin-right: 80px; */
+    /* margin-right: 20px; */
+}
+
+.playlist-content-markup-song-number{
+    font-family: Lato;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    left: 1%;
+    /* background-color: rgb(165, 165, 165); */
+    /* margin-right: 20px; */
+}
+
+.playlist-content-markup-song-name{
+    font-family: Lato;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    left: 120%;
+    /* margin-right: 400px; */
+}
+
+.playlist-content-markup-song-playes-times{
+    font-family: Lato;
+    font-style: normal;
+    color: white;
+    /* background-color: rgb(182, 182, 182); */
+    width: 160px;
+    position: absolute;
+    left: 780%;
+    /* margin-right: 105px; */
+}
+
+
+.playlist-content-markup-song-time{
+    font-family: Lato;
+    font-style: normal;
+    color: white;
+    width: 39px;
+    position: absolute;
+    left: 1000%;
+}
+
+.playlist_content_playlist_img_hover_box{
+    opacity: 0%;
+    height: 150px;
+   width: 150px;
+   border-radius: 10px;
+   position: absolute;
+   top: 54px;
+   left: 2%;
+   background-color: rgb(0, 0, 0, 0.2);
+   transition: all 0.4s linear;
+}
+
+.playlist_content_playlist_img_hover_box:hover{
+    opacity: 100%;
+/* background-image: url(../images/); */
+}
+
+.playlist_content_playlist_img_hover_box_img{
+    opacity: 100%;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* .playlist_content_playlist_img:hover ~ .playlist_content_playlist_img_hover_box{
+    display: block;
+    height: 150px;
+   width: 150px;
+   border-radius: 10px;
+   position: absolute;
+   top: 54px;
+   left: 2%;
+   background-color: #fff;
+   opacity: 30%;
+} */
+
+.new_playlists_block_bg{
+    animation-name: removing_bg_of_song_list;
+    animation-duration: 0.5s;
+    position: absolute;
+    background-color: #fff;
+    height: 60px;
+    width: 753px;
+    opacity: 0%;
+    border-radius: 10px;
+top: -10%;
+left: -10%;
+}
+
+.new_playlists_block_bg:hover{
+    animation-name: adding_bg_of_song_list;
+    animation-duration: 0.5s;
+    opacity: 20%;
+}
+
+/* ---------------------------------------------------------------------------------------   end playlist-content   ------------------------------------------------------------------------------------  */
+
+/* --------------------------------------------------------------------------------------------   animations   --------------------------------------------------------------------------------------------  */
+
+@keyframes adding {
+  /* 
+   animation-name: adding;
+    animation-duration: 1s;
+*/
+
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes adding_bg_of_song_list {
+    /* 
+     animation-name: adding_bg_of_song_list;
+      animation-duration: 1s;
+  */
+  
+    0% {
+      opacity: 0%;
+    }
+  
+    100% {
+      opacity: 20%;
+    }
+  }
+  
+
+  @keyframes removing_bg_of_song_list {
+    /* 
+     animation-name: removing_bg_of_song_list;
+      animation-duration: 1s;
+  */
+  
+    0% {
+      opacity: 20%;
+    }
+  
+    100% {
+      opacity: 0%;
+    }
+  }
+
+/* -----------------------------------------------------------------------------------------   end animations   ----------------------------------------------------------------------------------------  */

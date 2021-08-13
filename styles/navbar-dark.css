@@ -191,7 +191,8 @@
       z-index: 12;
       top: 7%;
       right: 13%;
-      background-color: #fff;
+      background-color: #373737;
+      border: 3px solid #c4c4c4;
       /* height: 250px; */
       /* width: 150px; */
       border-radius: 15px;

@@ -5,43 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/settings.css">
+    <link rel="stylesheet" href="./styles/settings-dark.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <div class="container">
          <a href="./profile.html" style="margin-top: 35px;">
-         <img src="./images/icons/arrow_left_normal.svg" style="margin-top: 15px; margin-left: 30px;" >
+         <img src="./images/icons/arrow_left_disabled.svg" style="margin-top: 15px
+         ; margin-left: 30px;" >
         </a>
 
-        <section>
+        <section style="position: relative;">
           <div class="settings-item">
-            <nav>
-                <ul class="topmenu">
-                  <li><a href="" class="down">lang</a>
-                    <ul class="submenu">
-                      <li><a class="subm-i-1" href="">Eng</a></li>
-                      <li><a href="">Ru</a></li>
-                      <li><a href="">Ukr</a></li>
-                    </ul>
-                  </li>
-                  <select id="theme">
-                    <option value="auto">Auto</option>
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                </select>
-                  <!-- <li><a href="./security.html">Security</a></li> -->
-                  <li><a href="./contact.html">Contact</a></li>
-                </ul>
-              </nav>
+<ul class="menu-of-set-items">
+  <li class="set-item-name">
+    <p class="set-item-name-text">
+      language
+    </p>
+    <button id="set-item-button-ukr"> 
+      ukraine
+    </button>
+    <button id="set-item-button-eng">
+      english
+    </button>
+  </li>
+  <li class="set-item-name"><p id="set-item-name-text-2">theme
+  </p>    <button class="set-item-button" id="set-item-button-dark">
+      dark
+    </button>
+  </li>
+</ul>
           </div>
         </section>
     </div>
-
-    <script src="./scripts/lang&theme.js" ></script>
-
-    <button class="them_button">
-  <!-- <p id="theme_button_text"></p> -->
-    </button>
+    <script src="./scripts/lang&theme.js" type="module"></script>
 </body>
 </html>

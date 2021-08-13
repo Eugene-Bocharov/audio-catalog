@@ -29,18 +29,21 @@
 .navigation {
   /* display: flex; */
   /* justify-content: space-between; */
+  margin: 0;
+  padding: 0;
   max-width: 758px;
-  margin-bottom: 15px;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  /* max-width: 350px; */
+
   transition: all 0.2s linear;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0;
+  margin-right: 10px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
 }
 
 .container-h {
@@ -125,11 +128,7 @@
   margin-top: 20px;
 }
 
-.nav__toggler {
-  display: none;
-}
-
-@media (max-width: 680px) {
+@media (max-width: 540px) {
   #logo-box {
     padding-bottom: 10px;
     margin-right: 0px;

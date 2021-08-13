@@ -1,7 +1,6 @@
 /* --------------------------------------------------Releases-------------------------------------------------- */
 
 #Titile-Realeases-divider {
-  margin-left: 24px;
   display: flex;
 }
 
@@ -45,20 +44,13 @@
   0% {
     top: 60%;
     opacity: 0%;
-    transform: rotate(270deg);
+    /* transform: rotate(180deg); */
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
-    /* right: 1px; */
-/*  */
+    right: 1px;
   }
 
-20%{
-  left: 90px;
-}
-
-  80% {
-    left: 110px;
-    /* transform: rotate(360deg); */
-  } 
+  59% {
+  }
 
   100% {
     top: 49%;
@@ -84,7 +76,7 @@
 /* releasesItemButtonElem */
 /* @media only screen and (min-width: 320px) and (max-width: 384px) { */
 .relases {
-  max-width: 370px;
+  box-sizing: border-box;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -150,11 +142,12 @@
 #featuredPlaylists {
   list-style: none;
   display: grid;
+  max-width: 758;
   grid-template-columns: repeat(4, 1fr);
   border-radius: 25px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  column-gap: 21px;
+  column-gap: 30px;
   row-gap: 18px;
 }
 
@@ -189,12 +182,12 @@
 }
 
 #PlaylistsLoaded-divider {
-  margin-left: 24px;
   display: flex;
 }
 
 .playlistsLoadedIco {
   margin-left: 10px;
+  margin-right: 15px;
 }
 
 .playlistsLoaded_section__title_playlists {
@@ -248,7 +241,7 @@
 }
 
 .playlistsLoadedElemDividerDescript {
-  margin: 0 0;
+  margin: 0 auto;
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
@@ -265,6 +258,8 @@
 }
 
 .playlistsLoadedElemTotal {
+  margin: 0;
+  padding: 0;
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
@@ -279,23 +274,26 @@
   margin-left: auto;
   margin-right: 15px;
 }
-
+.playlists {
+  margin: 0;
+  padding: 0;
+}
 /* --------------------------------------------------End Playlists--------------------------------------------- */
 
 /* --------------------------------------------------Media----------------------------------------------------- */
 @media (max-width: 708px) {
   #Titile-Realeases-divider {
-    margin-left: 25.64px;
   }
   #featuredPlaylists.releases {
     grid-template-columns: repeat(3, 1fr);
   }
-  .release {
-  }
-  /* .release_name,
+}
+.release {
+}
+/* .release_name,
   .releas_artist {
   } */
-}
+
 /* @media screen and ()and() {
   
 } */
@@ -306,15 +304,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+.playlistsLoadedElemDividerDescript {
+  max-width: 210px;
+}
 .nav__toggler {
   display: none;
 }
 @media (max-width: 540px) {
-  .menu {
-    display: none;
-  }
   .navigation {
+    margin: 0;
+    padding: 0;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -364,3 +363,4 @@
     transition: all 0.5s linear;
   }
 }
+

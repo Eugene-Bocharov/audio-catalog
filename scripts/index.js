@@ -26,7 +26,7 @@ fetch("./data/playlists.json")
 
 const logoBox = document.querySelector("#logo-box");
 const logoBoxName = document.createElement("h5");
-const UserName = "UresName"; // Потім потрібно буде додати document.getElementById('#id').value;
+const UserName = "User"; // Потім потрібно буде додати document.getElementById('#id').value;
 logoBoxName.textContent = UserName;
 logoBoxName.className = "UserName";
 logoBox.appendChild(logoBoxName);
@@ -80,7 +80,6 @@ NewReleases.appendChild(NewRelasesTitleName);
      const releasesItemButtonElem = document.createElement('a');
      releasesItemButtonElem.href = vall.external_urls.spotify; 
      releasesItemButtonElem.className = 'releasesItemButtonElem';
-     releasesItemButtonElem.target = "__blank"
      releasesItemElem.appendChild(releasesItemButtonElem)
      releasesItemButtonElemImg = document.createElement('img');
      releasesItemButtonElemImg.className = 'releasesItemButtonElemImg';
@@ -135,9 +134,8 @@ function playlistsLoaded(data) {
   const playlistsLoadedTitleName = document.createElement("h2");
   playlistsLoadedTitleName.className =
     "playlistsLoaded_section__title_playlists";
-  playlistsLoadedTitleName.textContent = "Featured Playlists";
-  
-
+    playlistsLoadedTitleName.textContent = "Featured Playlists";
+    // playlistsLoadedTitleName.className = 'playlistsLoaded_section__title_playlists';
 
   playlistsLoadedTitle.appendChild(playlistsLoadedTitleIco);
   playlistsLoadedTitle.appendChild(playlistsLoadedTitleName);

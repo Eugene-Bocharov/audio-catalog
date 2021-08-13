@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Catalog</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="./styles/browse.css">
+    <link rel="stylesheet" href="./styles/profile-dark.css">
+    <link rel="stylesheet" href="styles/navbar-dark.css" />  
+    <link rel="stylesheet" href="./styles/playlists-dark.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="dimmer"></div>
+      <nav class="navigation">
+
+        <button type="button" class="nav__toggler" id="navToggler">
+          <img src="images/icons/nav_menu_white.png" alt="Open nav menu" class="button-menu-img" />
+        </button>
+
+        <ul class="menu">
+          <li class="menu-item" >
+            <a href="./index.html" class="menu-item_link">Browse</a>
+          </li>
+          <li class="menu-item">
+            <a href="./Search.html" class="menu-item_link">Search</a>
+          </li>
+          <!-- <li class="menu-item">
+            <a href="#" class="menu-item_link">Library</a>
+          </li> -->
+          <li class="menu-item">
+            <a href="./playlists.html" class="menu-item_link-1">Playlists</a>
+          </li>
+          <li class="menu-item">
+            <a href="./profile.html" class="menu-item_link">Profile</a>
+          </li>
+           
+
+          <div id="logo-box"></div>
+        </ul>
+      </nav>
+
+    
+<main class="main">
+<div class="block-section">
+  
+
+
+    <div class="add-block">
+         <div class="add-button">
+              <img src="./images/icons/plus-white.png" class="white-plus" alt="">
+         </div>
+
+         <div class="creating-part">
+                 <button class="back-button">
+                     <img src="./images/icons/arrow_left_disabled.svg" alt="">
+                 </button>
+                 <input type="text" class="playlist-name-block" placeholder="Name">
+                 <!-- <input type="file" class="playlist-img-block"> -->
+                 <button class="create-block-button">
+                    Create playlist
+                </button>
+         </div>
+    </div>
+
+    <div class="playlist-content">
+        <button class="playlist-content-back-button">
+            <img src="./images/icons/arrow_left_disabled.svg" style="height: 15px;" alt="">
+        </button>
+
+        <div class="playlist-content-markup">
+            <p class="playlist-content-markup-text">#</p>
+             <p class="playlist-content-markup-text">TITLE</p>
+             <p class="playlist-content-markup-text" style="margin-left: 450px;">ALBUM</p>
+             <p class="playlist-content-markup-text" style="margin-left: 100px;">TIME</p>
+        </div>
+  <div class="playlist-content-markup-song-box">
+    <div class="playlist-content-markup-song">
+        <div class="new_playlists_block_bg"></div>
+        <p class="playlist-content-markup-song-number">1</p>
+<img src="./images/rock-block.jpg" class="playlist-content-markup-song-img" alt="">
+<p class="playlist-content-markup-song-name">Name</p>
+<p class="playlist-content-markup-song-playes-times">ROCK</p>
+<p class="playlist-content-markup-song-time">3 : 43</p>
+    </div>
+
+    <div class="playlist-content-markup-song">
+        <div class="new_playlists_block_bg"></div>
+        <p class="playlist-content-markup-song-number">2</p>
+<img src="./images/dark.jpg" class="playlist-content-markup-song-img" alt="">
+<p class="playlist-content-markup-song-name">Name</p>
+<p class="playlist-content-markup-song-playes-times">JAZZ </p>
+<p class="playlist-content-markup-song-time">5 : 27</p>
+    </div>
+  </div>
+    </div>
+</div>
+</main>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="./scripts/lang&theme.js"></script>
+    <script src="./scripts/playlists.js"></script>
+    <!-- <script src="./scripts/profile.js"></script> -->
+  </body>
+</html>
