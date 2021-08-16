@@ -6,7 +6,7 @@ const refs = {
   close_modal_button: document.querySelector(".back-button"),
   create_block_button: document.querySelector(".create-block-button"),
   playlist_name_block: document.querySelector(".playlist-name-block"),
-  playlist_content_back_button_adding_song_in_playlist: document.querySelector(),
+  // playlist_content_back_button_adding_song_in_playlist: document.querySelector(),
   //   playlist_img_block: document.querySelector('.playlist-name-block'),
 
   //           playlist-content_active
